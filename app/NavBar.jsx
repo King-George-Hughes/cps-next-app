@@ -31,7 +31,11 @@ const NavBar = () => {
   return (
     <nav className="bg-transparent w-full h-[100px] fixed z-50">
       <div className="container w-full h-full flex items-center justify-between text-white py-5 px-2">
-        <Link href={"/"} className="text-3xl font-bold">
+        <Link
+          href={"/"}
+          className="text-3xl font-bold"
+          style={{ fontFamily: "Pacifico" }}
+        >
           LOGO
         </Link>
         <ul className="inline-flex items-center gap-10">
@@ -43,7 +47,7 @@ const NavBar = () => {
         </ul>
         <Link
           href={"/booking"}
-          className="text-xl bg-primary_color text-gray-800 px-5 py-2 rounded-md font-medium"
+          className="text-lg bg-primary_color text-gray-800 px-5 py-2 rounded-sm font-medium"
         >
           Booking
         </Link>

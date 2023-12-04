@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "./NavBar";
 import { MyNextUiProvider } from "@/utils/MyNextUiProvider";
+import { FloatingSocial } from "./components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <MyNextUiProvider>
           <NavBar />
+          <FloatingSocial />
           <main>{children}</main>
         </MyNextUiProvider>
       </body>
