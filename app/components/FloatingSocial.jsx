@@ -18,7 +18,7 @@ const FloatingSocial = () => {
   ];
 
   return (
-    <div className="hidden lg:flex fixed text-white z-50 left-[4%] h-screen w-[50px] flex-col items-center justify-center gap-14">
+    <div className="hidden lg:flex fixed text-white z-50 left-[2%] h-screen w-[50px] flex-col items-center justify-center gap-14">
       <div className="flex flex-col gap-5">
         {socials.map((social, index) => (
           <Link key={index} href={social.href}>
