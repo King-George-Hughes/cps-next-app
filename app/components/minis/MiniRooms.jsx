@@ -28,7 +28,10 @@ const MiniRooms = () => {
             ))}
           </div>
           <div className="container">
-            <h2 className="text-4xl font-bold text-white text-center my-12">
+            <h2
+              className="text-4xl font-bold text-gray-800 text-center my-12"
+              style={{ fontFamily: "Pacifico" }}
+            >
               Our Rooms
             </h2>
             <div className="w-full flex items-center justify-between gap-10">
