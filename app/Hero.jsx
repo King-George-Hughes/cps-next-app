@@ -6,10 +6,9 @@ const Hero = () => {
         muted
         loop
         src="/videos/hero-vid-final.mp4"
-        // src="/videos/hero-vid.mp4"
         className="fixed top-0 left-0 bottom-0 right-0 w-full h-full object-cover -z-10"
       ></video>
-      <div className="fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-br from-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.4)]" />
+      <div className="fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-br from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.5)]" />
 
       <div className="container w-full h-full flex items-center p-5 text-white relative">
         <div className="absolute">
@@ -20,9 +19,12 @@ const Hero = () => {
             The Century Premier Suite Hotel is the right choice for visitors who
             are searching for a combination of charm, peace and, comfort.
           </p>
-          <button className="text-lg bg-primary_color text-gray-800 px-5 py-2 rounded-sm font-medium">
+          <a
+            href="#miniRooms"
+            className="text-lg bg-primary_color text-gray-800 px-5 py-2 rounded-sm font-medium"
+          >
             Explore More
-          </button>
+          </a>
         </div>
       </div>
     </div>
