@@ -1,5 +1,5 @@
 import Hero from "./Hero";
-import { MiniExperience, MiniRooms } from "./components";
+import { MiniExperience, MiniRooms, MiniSliderRoom } from "./components";
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Hero />
       <MiniRooms />
       <MiniExperience />
+      <MiniSliderRoom />
     </>
   );
 }

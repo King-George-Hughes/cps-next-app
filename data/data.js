@@ -49,4 +49,32 @@ const rooms = [
   },
 ];
 
-export { details, rooms };
+const roomSlides = [
+  {
+    id: 1,
+    badge: "Best Price",
+    title: "Family Suite",
+    image: "/images/room-1.jpg",
+    details:
+      "Room size: 30 ft, 1 King Bed or 2 Single Bed, View Beach, Breakfast Included",
+  },
+  {
+    id: 2,
+    badge: "Special Price",
+    title: "Presidential Suite",
+    image: "/images/room-2.jpg",
+    details:
+      "Room size: 30 ft, 1 King Bed or 2 Single Bed, View Beach, Breakfast Included",
+  },
+  {
+    id: 3,
+    badge: "Best Alles",
+    title: "Premier Room",
+    image: "/images/room-3.jpg",
+    details:
+      "Room size: 30 ft, 1 King Bed or 2 Single Bed, View Beach, Breakfast Included",
+  },
+ 
+];
+
+export { details, rooms, roomSlides };

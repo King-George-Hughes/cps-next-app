@@ -1,0 +1,64 @@
+"use client";
+
+import { Parallax } from "react-parallax";
+import { roomSlides } from "@/data/data";
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+
+const MiniSliderRoom = () => {
+  const [index, setIndex] = useState(0);
+  const totalRoomSlides = roomSlides.length;
+  console.log(totalRoomSlides);
+
+  return (
+    <div className="w-full h-[700px]">
+      <Parallax bgImage={"/images/bg-img.jpg"} strength={400}>
+        <div className="h-[700px] w-full backdrop-blur-sm">
+          <div className="container w-full h-full flex items-center justify-center px-5 relative">
+            <div className="absolute w-full flex items-center justify-between text-white">
+              <IoIosArrowBack size={50} className="cursor-pointer" />
+              <IoIosArrowForward size={50} className="cursor-pointer" />
+            </div>
+            <div className="w-full h-full flex items-center justify-between px-10">
+              <div className="w-1/2 space-y-4">
+                <h2
+                  className="text-4xl text-white"
+                  style={{ fontFamily: "Pacifico" }}
+                >
+                  Best Alles
+                </h2>
+                <h2 className="text-6xl text-primary_color font-bold">
+                  Premier Room
+                </h2>
+                <p className="text-gray-300">
+                  Room size: 30 ft, 1 King Bed or 2 Single Bed, View Beach,
+                  Breakfast Included
+                </p>
+                <Link
+                  href="#"
+                  className="inline-block border-[1px] border-yellow-800 text-gray-200 px-5 py-2"
+                >
+                  View Room Details
+                </Link>
+              </div>
+              <div className="w-1/2">
+                <Image
+                  src="/images/room-1.jpg"
+                  alt="image"
+                  width={400}
+                  height={300}
+                  className="w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Parallax>
+    </div>
+  );
+};
+
+export default MiniSliderRoom;

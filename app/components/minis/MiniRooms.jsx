@@ -6,9 +6,9 @@ import { details, rooms } from "@/data/data";
 
 const MiniRooms = () => {
   return (
-    <div className="w-full h-screen relative" id="miniRooms">
+    <div className="w-full h-[1000px] relative" id="miniRooms">
       <Parallax bgImage={"/images/room-2.jpg"} strength={400}>
-        <div className="h-screen w-full pb-20">
+        <div className="h-[1000px] w-full pb-20">
           <div className="w-full h-[170px] flex item-center justify-between mb-10">
             {details.map((detail, index) => (
               <div

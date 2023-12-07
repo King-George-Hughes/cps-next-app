@@ -1,7 +1,18 @@
-import React from "react";
+import { staggerContainer } from "@/utils/motion";
+import { MotionDiv } from "./MotionElements";
 
-const StaggerContainerComponent = () => {
-  return <div>StaggerContainerComponent</div>;
+const StaggerContainerMotion = ({ children }) => {
+  return (
+    <MotionDiv
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className="w-full"
+    >
+      {children}
+    </MotionDiv>
+  );
 };
 
-export default StaggerContainerComponent;
+export default StaggerContainerMotion;
