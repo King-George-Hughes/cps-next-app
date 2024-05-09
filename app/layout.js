@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "./NavBar";
 import { MyNextUiProvider } from "@/utils/MyNextUiProvider";
 import { FloatingSocial } from "./components";
+import Footer from "./Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
           <NavBar />
           <FloatingSocial />
           <main>{children}</main>
+          <Footer />
         </MyNextUiProvider>
       </body>
     </html>

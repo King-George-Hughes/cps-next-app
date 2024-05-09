@@ -7,11 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import {
-  MotionAnimatePresence,
-  MotionDiv,
-  MotionFadeIn,
-} from "../framer-animations/MotionElements";
+import { MotionDiv, MotionFadeIn } from "../framer-animations/MotionElements";
 
 const MiniSliderRoom = () => {
   const [active, setActive] = useState(0);

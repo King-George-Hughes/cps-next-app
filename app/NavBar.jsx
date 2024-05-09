@@ -36,7 +36,7 @@ const NavBar = () => {
           className="text-3xl font-bold"
           style={{ fontFamily: "Pacifico" }}
         >
-          LOGO
+          CPS
         </Link>
         <ul className="inline-flex items-center gap-10">
           {menuLinks.map((menu) => (
